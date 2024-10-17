@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.crud{
+    width: 90%;
+    margin: 20px;
+}
+.head{
+    text-align: center;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+input:focus{
+    background-color: black;
+    padding: 15px;
+}
+#total{
+    background-color: rgb(236, 43, 43);
+    padding: 4px;
+    border-radius: 4px;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price input{
+    width: 25%;
+}
+button{
+    width: 100%;
+    padding: 10px;
+   
+    background-color: rgb(95, 9, 129);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    transition: 0.5s;
+
+}
+button:hover{
+    background-color: rgb(135, 11, 184);
+    letter-spacing: 1px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+.button button{
+    width: 30%;
+    border-radius: 10px;
+}
+table{
+    width: 100%;
+    text-align:center ;
+    margin: 10px 0px;
+}
+
+table button{
+    width: 100px;
+}
+#delateAll{
+    margin: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+    .crud {
+        width: 95%; /* Make the width more flexible */
+    }
+
+    .price input {
+        width: 35%; /* Make inputs wider for tablet */
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    .button button {
+        width: 45%; /* Buttons take up more space */
+    }
+
+    input:focus {
+        padding: 12px; /* Adjust focus padding */
+    }
+
+    table button {
+        width: 90px; /* Slightly smaller buttons on table */
+    }
+}
+
+/* Phone Styles (500px and below) */
+@media only screen and (max-width: 500px) {
+    .crud {
+        width: 100%; /* Full width on phones */
+        margin: 10px; /* Reduce margins */
+    }
+
+    .price {
+        flex-direction: column; /* Stack the price and input vertically */
+        align-items: flex-start;
+    }
+
+    .price input {
+        width: 100%; /* Make inputs full width */
+        margin-top: 10px; /* Add some spacing */
+    }
+
+    .button {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+
+    .button button {
+        width: 100%; /* Full width buttons */
+    }
+
+    input {
+        padding: 8px; /* Smaller padding for inputs */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    input:focus {
+        padding: 10px; /* Reduce focus padding */
+    }
+
+    button {
+        padding: 8px;
+        font-size: 0.9rem; /* Smaller font size for buttons */
+    }
+
+    table button {
+        width: 80px; /* Smaller buttons in tables */
+    }
+
+    #total {
+        font-size: 0.9rem; /* Adjust total button font size */
+    }
+}

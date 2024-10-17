@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/syle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h1>cruds</h1>
+            <p>products managment system</p>
+        </div>
+        <div class="input">
+            <input type="text" id="title" placeholder="title"> 
+            <div class="price">
+                <input  onkeyup="getTotal()"  type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()"  type="number" id="taxes" placeholder="taxes">
+                <input  onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total">total</small>
+            </div>
+            <input type="text" id="count" placeholder="count">
+            <input type="text" id="categories" placeholder="categories">
+            <button id="create">create</button>
+        </div>
+        <div class="output">
+            <input type="text" id="search"
+            placeholder="search">
+            <div class="button">
+                <button id="titre" >search by title</button>
+                <button id="cat">search by categorie</button>
+            </div>
+            <div id="delateAll">
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>count</th>
+                    
+                    
+                    <th>category</th>
+                    <th> update</th>
+                    <th>delate</th>
+                </tr>
+                <tbody id="tbody">
+                   
+                </tbody>
+                
+            </table>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
